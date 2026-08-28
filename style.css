@@ -167,7 +167,7 @@ nav h1 {
 
 /* Portfolio styles */
 .content h1 {
-  color: black;
+  color: rgb(116, 243, 252);
 }
 
 #portfolio {
@@ -190,19 +190,19 @@ nav h1 {
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  color: #444;
+  color: #92d3f8;
   padding: 16px 20px;
   font-size: 1.1rem;
   font-weight: 500;
   background: #fff;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #0a0000;
   border-radius: 12px;
   transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
 #portfolio a:hover {
-  background: #000;
-  color: #fff;
+  background: #53daf1;
+  color: #fcf7f7;
   transform: translateX(4px);
 }
 
