@@ -31,7 +31,7 @@
     <div class="box">?</div>
 
     <script>
-      (function () {
+    (function () {
         "use strict";
         /* global jQuery */
 
@@ -71,9 +71,8 @@
         // TODO 2 - Variable declarations
         var positionX = 0;
         var points = 0;
-        var speed = 5;
-
-         /**
+        var speed = 3;
+        /**
          * This Function will be called 20 times/second.
          * Each time it is called, it should move the Box to a new location.
          * If the box drifts off the screen, turn it around!
@@ -81,45 +80,36 @@
         function update() {
           moveBoxTo(positionX);
           positionX += speed
-          if(positionX >= boardwidth) {
+          if(positionX >= boardWidth) {
             speed = speed * -1;
           }
-          
-      }
-         
-        
-        
-        
-        
+          if(positionX <0){
+           speed = speed * -1; 
+          }
         }
-      
-
-        /**
+       /**
          * This Function will be called each time the box is clicked.
          * Each time it is called, it should perform each of the following actions:
          * - increase the points total
          * - increase the speed
          * - move the box to the left side of the screen.
          */
-         
         function handleBoxClick() { 
         positionX = 0;
         changeBoxText(points);
         points++;
-        speed += 3;
-
-          
-         }
-        
-
-
-
+        speed = 3 * points + 10;
+        }
 
         
 
 
+
+
         
-    
+      
+        
+    })();
     </script>
   </body>
 </html>
